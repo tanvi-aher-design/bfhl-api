@@ -47,10 +47,10 @@ export default function handler(req, res) {
       mixed += (i % 2 === 0) ? chars[i].toUpperCase() : chars[i].toLowerCase();
     }
 
-    const uname = (process.env.FULL_NAME || 'john_doe').toLowerCase().replace(/\s+/g, '_');
+    const uname = (process.env.FULL_NAME || 'tanvi_aher').toLowerCase().replace(/\s+/g, '_');
     const dob = process.env.DOB_DDMMYYYY || '17091999';
-    const mail = process.env.EMAIL || 'john@xyz.com';
-    const roll = process.env.ROLL_NUMBER || 'ABCD123';
+    const mail = process.env.EMAIL || 'tanvi@xyz.com';
+    const roll = process.env.ROLL_NUMBER || '22BCE0413';
 
     return res.status(200).json({
       ok: true,
